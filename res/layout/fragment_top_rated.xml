@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/yellow_and_blue_scrolling_gradient"
+    android:orientation="vertical" >
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="8dp"
+        android:text="Reminders-SMS Service"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <View
+        android:id="@+id/view1"
+        style="@style/Divider"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/switch1"
+        android:layout_marginTop="8dp" />
+
+    <View
+        android:id="@+id/view2"
+        style="@style/Divider"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/switch2"
+        android:layout_marginTop="8dp" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/switch1"
+        android:layout_alignRight="@+id/switch1"
+        android:layout_below="@+id/view1"
+        android:layout_marginTop="8dp"
+        android:text="Black Listing Service"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/switch1"
+        android:layout_alignRight="@+id/switch1"
+        android:layout_below="@+id/view2"
+        android:layout_marginTop="8dp"
+        android:text="GPS Location Sharing Service"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <View
+        android:id="@+id/view3"
+        style="@style/Divider"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/switch3"
+        android:layout_marginTop="8dp" />
+
+    <Switch
+        android:id="@+id/switch4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/switch1"
+        android:layout_alignRight="@+id/switch1"
+        android:layout_below="@+id/view3"
+        android:layout_marginTop="8dp"
+        android:text="Sobriety Test Service"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <View
+        android:id="@+id/view4"
+        style="@style/Divider"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/switch4"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:text="Set the difficulty level of the test."
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#0C2138"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/switch4"
+        android:layout_below="@+id/view4"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="8dp"
+        android:text="Sobriety Test Settings"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/textView2" >
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Easy"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Difficult"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup1"
+        android:layout_toLeftOf="@+id/digitalClock1"
+        android:text="System Time:"
+        android:layout_marginTop="8dp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <DigitalClock
+        android:id="@+id/digitalClock1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="78dp"
+        android:text="DigitalClock"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>

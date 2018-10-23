@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ProtectMe!!</string>
+    <string name="action_settings">Developers</string>
+    <string name="help">Help</string>
+    <string name="Feedback">Feedback</string>
+    <string name="MySet">Settings</string>
+    <string name="hello_world">Hello!!</string>
+    <string name="Reminder">Reminder</string>
+    <string name="Call">Call</string>
+    <string name="Home">Home</string>
+</resources>
